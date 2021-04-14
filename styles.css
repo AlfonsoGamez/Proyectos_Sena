@@ -1,0 +1,87 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box; 
+}
+body{
+    background-image: url(../images/fondo\ rosa.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    width: 100%;
+}
+.form-register{
+width: 400px;
+background: white;
+padding: 30px;
+margin: 500px;
+margin-top: 150px;
+border-radius: 12px;
+font-family: 'calibri';
+color: black;
+text-align: left;
+
+}
+.form-register h4{
+font-size:33px ;
+margin-bottom: 20px;
+}
+.controls{
+    width: 100%;
+    background:white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(177, 177, 189);
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+    background-position-x: 20px;
+}
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a{
+    color:black;
+    text-decoration: none;
+}
+
+.form-register a:hover{
+    color:black;
+    text-decoration: underline;
+}
+.form-register .botons{
+    width: 100%;
+    background: #8e5a97;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+#menu{
+    float:right;
+    margin-right: 700px;
+    margin-top: -900px;
+    font-family: 'calibri';
+    
+}
+#menu h2{
+    font: size 30px;
+width: 100%;
+}
+
+#menu ul{
+font-size: 25px;
+width: 100%;
+}
+.titulo {
+font-weight: normal;
+margin-top: 100px;
+margin-left: 500px;
+
+}

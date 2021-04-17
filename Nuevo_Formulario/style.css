@@ -1,0 +1,68 @@
+body{
+ margin: 0;
+ padding: 0;
+ background-image: url(fondo.jpg);
+ position: absolute;
+ background-size: 100%;
+ background-attachment: fixed;
+ color: white;
+}
+ .cabezal h4{
+font-weight: normal;
+font-size: xx-large ;
+text-align: left;
+margin-top: 50px;
+font-family: monospace;
+margin-left:40px ;
+
+ }
+.cabezal a{
+    color: white;
+    text-decoration: none;
+}
+ .seccion h1{
+    
+    font-size: xx-large;
+    text-align: center;
+    font-family: monospace;
+    margin-top: 100px;
+ }     
+ .seccion p{
+     margin-top:90px;
+margin-left: 300px;
+margin-right: 430px;
+line-height:10mm;
+font-size: 130%;
+
+ }
+ #lista{
+     margin-top:100px;
+margin-left: 310px;
+line-height:10mm;
+font-size: 130%;
+
+ }
+ #imagen{
+margin-top:50px;
+margin-left: 350px;
+width: 400px;
+
+ }
+ #sub{
+margin-top:50px;
+font-size: x-large;
+font-family: monospace;
+margin-left: 350px;
+ }
+
+#video{
+    margin-left: 350px;
+    margin-top:150px
+    
+    
+}
+
+
+
+
+

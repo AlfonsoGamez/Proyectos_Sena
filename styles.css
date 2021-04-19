@@ -4,7 +4,7 @@ padding: 0;
 box-sizing: border-box; 
 }
 body{
-    background-image: url(fondo_rosa.jpg);
+    background-image: url(fondo.xcf);
     background-size: 100%;
     background-attachment: fixed;
     width: 100%;

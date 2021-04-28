@@ -1,8 +1,4 @@
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box; 
-}
+
 body{
     background-image: url(fondo_rosa.jpg);
     background-size: 100%;
@@ -12,7 +8,7 @@ body{
 .form-register{
 width: 400px;
 background: white;
-padding: 30px;
+padding: 20px;
 margin: 500px;
 margin-top: 150px;
 border-radius: 12px;
@@ -22,17 +18,17 @@ text-align: left;
 
 }
 .form-register h4{
+    text-align: center;
 font-size:33px ;
 margin-bottom: 20px;
 }
 .controls{
-    width: 100%;
+    width: 90%;
     background:white;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid rgb(177, 177, 189);
-    font-family: 'calibri';
     font-size: 18px;
     color: black;
     background-position-x: 20px;
@@ -41,7 +37,6 @@ margin-bottom: 20px;
     height: 40px;
     text-align: center;
     font-size: 18px;
-    line-height: 40px;
 }
 
 .form-register a{
@@ -65,8 +60,8 @@ margin-bottom: 20px;
 
 #menu{
     float:right;
-    margin-right: 700px;
-    margin-top: -900px;
+    margin-right: 600px;
+    margin-top: -28cm;
     font-family: 'calibri';
     
 }

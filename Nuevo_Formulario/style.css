@@ -35,31 +35,49 @@ font-size: 130%;
 
  }
  #lista{
-     margin-top:100px;
+     margin-top:70px;
 margin-left: 310px;
 line-height:10mm;
 font-size: 130%;
 
  }
- #imagen{
-margin-top:50px;
-margin-left: 350px;
-width: 400px;
 
- }
- #sub{
-margin-top:50px;
-font-size: x-large;
-font-family: monospace;
+ .mitad img{
+     margin-top: 1.5cm;
+    margin-left: 350px;
+    width: 500px;
+}
+.mitad h3{
 margin-left: 350px;
+text-align: left;
+margin-top: 50px;
+font-size: xx-large;
+}
 
- }
+.seccion2{
+width: 500px;
+height: 285px;
+background-color: transparent;
+border-color: white;
+border: 1mm solid;
+padding: 15px;
+margin-left: 960px;
+margin-top: -328px;
+}
+.seccion2 p{
+font-size:130%;
+line-height: 10mm;
+text-align: center;
+margin-top: 5px;
+}
 
 #video{
-    margin-left: 650px;
-    margin-top:150px
-
+margin-left: 350px;
+margin-top:150px;
+width: 700px;
+height: 400px;
 }
+
 #ultimo{
 width: 95%;
 height: 200px;
@@ -70,8 +88,6 @@ margin: auto;
 border-radius: 800px;
 margin-top: 250px;
 margin-bottom: 2em;
-padding: 0;
-
 }
 
 

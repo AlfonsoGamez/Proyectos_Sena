@@ -6,18 +6,29 @@ padding: 0;
  background-attachment: fixed;
  color: white;
 }
- .cabezal h4{
-font-weight: normal;
-font-size: xx-large ;
-text-align: left;
-margin-top: 50px;
-font-family: monospace;
-margin-left:40px ;
+nav{
+    padding: 50px;
+}
+nav ul{
+    list-style: none;
+background:transparent;
+display: flex;
 
- }
-.cabezal a{
+}
+nav li a{
     color: white;
     text-decoration: none;
+    padding: 20px;
+    margin: 20px;
+border-radius: 500px;
+border: 0.5mm;
+font-size: 1.5em;
+}
+nav li a:hover{
+    background: white;
+    color:black;
+    transition: 0.5s;
+    
 }
  .seccion h1{
     
@@ -42,12 +53,13 @@ font-size: 130%;
 
  }
 
- .mitad img{
+ #mitad img{
      margin-top: 1.5cm;
     margin-left: 350px;
     width: 500px;
 }
-.mitad h3{
+
+#mitad h3{
 margin-left: 350px;
 text-align: left;
 margin-top: 50px;
@@ -78,17 +90,25 @@ width: 700px;
 height: 400px;
 }
 
-#ultimo{
+footer{
 width: 95%;
 height: 200px;
 background-color:transparent;
 border: 1mm solid;
 border-color: rgb(214, 54, 128);
 margin: auto;
-border-radius: 800px;
-margin-top: 250px;
+border-radius: 700px;
+margin-top: 150px;
 margin-bottom: 2em;
 }
 
-
+svg{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+footer pre{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 80px;
+}
 

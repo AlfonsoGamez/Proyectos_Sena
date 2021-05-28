@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="WB DataDic" />
+    <meta name="description" content="mydb Data Dictionary." />
+    <title>mydb Data Dictionary</title>
+    <style type="text/css">
+    table{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    abbr{
+        cursor: help;
+    }
+    table, td, th{
+        border-style: solid;
+        border-width: 1px;
+    }
+    table caption{
+        font-size: 120%;
+        font-weight: bold;
+    }
+    caption{
+        color: black;
+    }
+    td, th{
+        border-color: silver;
+    }
+    tr:hover{
+        color: #333;
+        background-color: #F2F2F2;
+    }
+    th{
+        background-color: silver;
+    }
+    td{
+        color: gray;
+    }
+    ul{
+        font-style: italic;
+    }
+    #title-sect{
+        color: gray;
+        text-align: right;
+    }
+    .proj-desc{
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+<div id="title-sect">
+<h1>mydb<br> Data Dictionay</h1>
+<p>
+<em>2021-05-16</em>
+</p>
+<p class="proj-desc">
+<em></em>
+</p>
+</div>
+<h2>Alphabetic Index</h2>
+<ul>
+<li><a href='#Administrativos'>Administrativos</a></li>
+<li><a href='#Aprendiz'>Aprendiz</a></li>
+<li><a href='#Control_Acceso'>Control_Acceso</a></li>
+<li><a href='#Elementos'>Elementos</a></li>
+<li><a href='#Instructores'>Instructores</a></li>
+<li><a href='#Personal_sevicios_generales'>Personal_sevicios_generales</a></li>
+<li><a href='#Relación_Aprendiz_Instructores'>Relación_Aprendiz_Instructores</a></li>
+<li><a href='#Relación_Instructores_SEDE'>Relación_Instructores_SEDE</a></li>
+<li><a href='#SEDE'>SEDE</a></li>
+</ul>
+<table id='Administrativos'>
+<caption>Administrativos</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>ID_Administrativos</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena el ID de la persona.
+Es un campo tipo INT.
+Es llave primaria de la clase administrativos.</td>
+</tr>
+<tr>
+    <td>Nombre</td>
+    <td>VARCHAR(25)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Almacena el nombre de la persona.
+Es un campo tipo VARCHAR.
+</td>
+</tr>
+<tr>
+    <td>Apellidos</td>
+    <td>VARCHAR(25)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena el apellido de la persona.
+Es un campo tipo VARCHAR.
+</td>
+</tr>
+<tr>
+    <td>Cargo</td>
+    <td>VARCHAR(15)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena el cargo de la persona.
+Es un campo tipo VARCHAR.
+</td>
+</tr>
+<tr>
+    <td>Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase administradores.
+Relación muchos a uno, identificable entre la clase 'administrativos' y 'control de acceso'.</td>
+</tr>
+<tr>
+    <td>Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase administradores.
+Relación muchos a uno, identificable entre la clase 'administrativos' y 'control de acceso'.</td>
+</tr>
+<tr>
+    <td>SEDE_ID_Sede</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase administrativos.
+Relación muchos a uno, identificable entre la clase 'sede' y 'administrativos'
+</td>
+</tr>
+<tr>
+    <td>SEDE_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase administrativos.
+Relación muchos a uno, identificable entre la clase 'sede' y 'administrativos'</td>
+</tr>
+<tr>
+    <td>SEDE_Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase administrativos.
+Relación muchos a uno, identificable entre la clase 'sede' y 'administrativos'</td>
+</tr>
+<tr>
+    <td>SEDE_Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase administrativos.
+Relación muchos a uno, identificable entre la clase 'sede' y 'administrativos'</td>
+</tr>
+<tr>
+    <td>SEDE_Administrativos_ID_Administrativos</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase administrativos.
+Relación muchos a uno, identificable entre la clase 'sede' y 'administrativos'</td>
+</tr>
+<tr>
+    <td>SEDE_Administrativos_Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase administrativos.
+Relación muchos a uno, identificable entre la clase 'sede' y 'administrativos'</td>
+</tr>
+<tr>
+    <td>SEDE_Administrativos_Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase administrativos.
+Relación muchos a uno, identificable entre la clase 'sede' y 'administrativos'</td>
+</tr>
+<table id='Aprendiz'>
+<caption>Aprendiz</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>En este campo va el ID del aprendiz.
+Es un campo tipo INT.
+Es llave primaria en la clase aprendiz.
+Llave foránea en la relación aprendiz- instructores, en la clase sede y en la clase control_acceso.</td>
+</tr>
+<tr>
+    <td>Nombre</td>
+    <td>VARCHAR(25)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Dato que especifica el nombre en la clase aprendiz.
+Campo tipo VARCHAR. </td>
+</tr>
+<tr>
+    <td>Apellidos</td>
+    <td>VARCHAR(25)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Especifica el apellido de la clase aprendiz.
+Es un campo tipo VARCHAR.
+</td>
+</tr>
+<tr>
+    <td>Ficha</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena el número de la ficha del aprendiz.
+Es un campo tipo INT.
+</td>
+</tr>
+<tr>
+    <td>Programa_de_formación</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este es un campo que alamacena el programa de formación en el que esta el aprendiz.
+Es un campo tipo VARCHAR.
+
+</td>
+</tr>
+<tr>
+    <td>Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea pérteneciente a la clase aprendiz (muchos a uno) y en la relación aprendiz_instructores(relación uno a muchos)
+Llave primaria de la clase control de acceso.</td>
+</tr>
+<tr>
+    <td>Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foranea en la clase aprendiz(muchos a uno) y en la relación aprendiz_instructores (uno a muchos).
+</td>
+</tr>
+<tr>
+    <td>SEDE_ID_Sede</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase aprendiz (relación muchos a uno, identificable)
+Llave primaria en la clase sede.
+</td>
+</tr>
+<tr>
+    <td>SEDE_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave  foránea en la clase aprendiz y sede (relación muchos a uno, identificable)
+</td>
+</tr>
+<tr>
+    <td>SEDE_Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave  foránea en la clase aprendiz y sede (relación muchos a uno, identificable)</td>
+</tr>
+<tr>
+    <td>SEDE_Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave  foránea en la clase aprendiz y sede (relación muchos a uno, identificable)</td>
+</tr>
+<tr>
+    <td>SEDE_Administrativos_ID_Administrativos</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave  foránea en la clase aprendiz y sede (relación muchos a uno, identificable)</td>
+</tr>
+<tr>
+    <td>SEDE_Administrativos_Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave  foránea en la clase aprendiz y sede (relación muchos a uno, identificable)</td>
+</tr>
+<tr>
+    <td>SEDE_Administrativos_Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave  foránea en la clase aprendiz y sede (relación muchos a uno, identificable)</td>
+</tr>
+<table id='Control_Acceso'>
+<caption>Control_Acceso</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena el  código del registro.
+Campo tipo INT.
+Clave primaria de la clase control_acceso.
+</td>
+</tr>
+<tr>
+    <td>Hora_entrada</td>
+    <td>TIME(6)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Almacena la hora en que se registra la entrada.
+Campo tipo TIME.</td>
+</tr>
+<tr>
+    <td>Hora_Salida</td>
+    <td>TIME(6)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Almacena la hora en la que se registra la hora de salida.
+Es un campo tipo TIME.</td>
+</tr>
+<tr>
+    <td>Fecha</td>
+    <td>DATE</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Almacena la fecha del registro.
+Es un campo tipo DATE.</td>
+</tr>
+<tr>
+    <td>Rol</td>
+    <td>VARCHAR(15)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Almacena el rol que tiene la persona que ingresa.
+Campo tipo VARCHAR.
+</td>
+</tr>
+<tr>
+    <td>Elementos_Entrada</td>
+    <td>VARCHAR(20)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena los elemntos que ingresa la persona a la sede.
+Es un  campo tipo VARCHAR.
+</td>
+</tr>
+<tr>
+    <td>Elementos_Salida</td>
+    <td>VARCHAR(20)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena los elementos de salida.
+Es un campo tipo VARCHAR.
+</td>
+</tr>
+<tr>
+    <td>Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Almacena el ID del aprendiz.
+Es un camo tipo INT
+Relación uno a uno, identificable.</td>
+</tr>
+<tr>
+    <td>SEDE_ID_Sede</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase control de acceso(relación muchos uno,identificable con la clase sede).</td>
+</tr>
+<tr>
+    <td>SEDE_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase control de acceso(relación muchos uno,identificable con la clase sede).</td>
+</tr>
+<tr>
+    <td>SEDE_Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase control de acceso(relación muchos uno,identificable con la clase sede).</td>
+</tr>
+<tr>
+    <td>SEDE_Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase control de acceso(relación muchos uno,identificable con la clase sede).</td>
+</tr>
+<tr>
+    <td>SEDE_Administrativos_ID_Administrativos</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase control de acceso(relación muchos uno,identificable con la clase sede).</td>
+</tr>
+<tr>
+    <td>SEDE_Administrativos_Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase control de acceso(relación muchos uno,identificable con la clase sede).</td>
+</tr>
+<tr>
+    <td>SEDE_Administrativos_Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase control de acceso(relación muchos uno,identificable con la clase sede).</td>
+</tr>
+<table id='Elementos'>
+<caption>Elementos</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>COD_Elemento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='Instructores'>
+<caption>Instructores</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>ID_Instructores</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena el ID de los instructores.
+Es un campo tipo INT.
+Es llave primaria de la clase instructores.
+
+</td>
+</tr>
+<tr>
+    <td>Nombres</td>
+    <td>VARCHAR(25)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena los nombres de los instructores.
+Campo tipo VARCHAR.</td>
+</tr>
+<tr>
+    <td>Apellidos</td>
+    <td>VARCHAR(25)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena los apellidos de los instrucores.
+Campo tipo VARCHAR.
+</td>
+</tr>
+<tr>
+    <td>Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase instructores.
+Relación muchos a uno entre la clase 'instrucores' y 'control_acceso'.
+</td>
+</tr>
+<tr>
+    <td>Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la clase instructores.
+Relación muchos a uno entre la clase 'instrucores' y 'control_acceso'.
+</td>
+</tr>
+<table id='Personal_sevicios_generales'>
+<caption>Personal_sevicios_generales</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>IdPersonal_sevicios_generales</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena la PK de el personal de servicios generales.
+Es llave primaria de la clase Personal_servicios_generales.
+Es un campo tipo INT.</td>
+</tr>
+<tr>
+    <td>Nombre</td>
+    <td>VARCHAR(25)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Almacena el nombre de la persona.
+Es un campo tipo VARCHAR.</td>
+</tr>
+<tr>
+    <td>Apellidos</td>
+    <td>VARCHAR(25)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Almacena el apellido de la persona.
+Es un campo tipo VARCHAR.</td>
+</tr>
+<tr>
+    <td>Cargo</td>
+    <td>VARCHAR(15)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena el cargo de la persona.
+Es un campo tipo VARCHAR.</td>
+</tr>
+<tr>
+    <td>Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la relación uno a muchos identificable, entre las clases 'control_acceso' y 'personal_servicios generales'
+</td>
+</tr>
+<tr>
+    <td>Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la relación uno a muchos identificable, entre las clases 'control_acceso' y 'personal_servicios generales'
+</td>
+</tr>
+<tr>
+    <td>SEDE_ID_Sede</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la relación muchos a uno,identificable, entre las clases 'personal_servicios_generales' y 'sede'</td>
+</tr>
+<tr>
+    <td>SEDE_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la relación muchos a uno,identificable, entre las clases 'personal_servicios_generales' y 'sede'</td>
+</tr>
+<tr>
+    <td>SEDE_Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la relación muchos a uno,identificable, entre las clases 'personal_servicios_generales' y 'sede'</td>
+</tr>
+<tr>
+    <td>SEDE_Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la relación muchos a uno,identificable, entre las clases 'personal_servicios_generales' y 'sede'</td>
+</tr>
+<table id='Relación_Aprendiz_Instructores'>
+<caption>Relación_Aprendiz_Instructores</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la relación_aprendiz_instructores.
+Relación muchos a muchos entre las clases  'instructores' y 'aprendiz'.</td>
+</tr>
+<tr>
+    <td>Aprendiz_Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la relación_aprendiz_instructores.
+Relación muchos a muchos entre las clases  'instructores' y 'aprendiz'.</td>
+</tr>
+<tr>
+    <td>Aprendiz_Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la relación_aprendiz_instructores.
+Relación muchos a muchos entre las clases  'instructores' y 'aprendiz'.</td>
+</tr>
+<tr>
+    <td>Instructores_ID_Instructores</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea en la relación_aprendiz_instructores.
+Relación muchos a muchos entre las clases 'aprendiz' e 'instructores'.</td>
+</tr>
+<table id='Relación_Instructores_SEDE'>
+<caption>Relación_Instructores_SEDE</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>Instructores_ID_Instructores</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la relación de la 'relación_instructores_SEDE'
+Relación muchos a muchos entre la relación de las clases  'instructores' y 'sede'.
+</td>
+</tr>
+<tr>
+    <td>SEDE_ID_Sede</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la relación de la 'relación_instructores_SEDE'
+Relación muchos a muchos entre la relación de las clases  'instructores' y 'sede'.</td>
+</tr>
+<tr>
+    <td>SEDE_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la relación de la 'relación_instructores_SEDE'
+Relación muchos a muchos entre la relación de las clases  'instructores' y 'sede'.</td>
+</tr>
+<table id='SEDE'>
+<caption>SEDE</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Column name</th>
+    <th>DataType</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Increment'>AI</abbr></th>
+    <th>Default</th>
+    <th>Comment</th>
+</tr>
+<tr>
+    <td>ID_Sede</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena el ID de la sede.
+Es un campo tipo INT.
+Es llave primaria de la clase SEDE.
+</td>
+</tr>
+<tr>
+    <td>Fecha</td>
+    <td>DATE</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Almacena la fecha de ingreso a la sede.
+Campo tipo DATE.
+</td>
+</tr>
+<tr>
+    <td>Hora</td>
+    <td>TIME(6)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Almacena la hora de ingreso a la sede.
+Campo tipo time
+</td>
+</tr>
+<tr>
+    <td>Lugar_Designados</td>
+    <td>VARCHAR(25)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Este campo almacena el lugar perteneciente para ingreso a la sede.
+Campo tipo VARCHAR.
+</td>
+</tr>
+<tr>
+    <td>Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la clase sede.
+Relación uno a muchos, identificable, entre la clase 'sede' y 'aprendiz'.
+Relación uno a muchos, identificable en la 'relación_instructores_SEDE'.
+Relación uno a muchos, identificable entre la clase 'sede' y 'control de acceso'
+Relación uno a muchos, identificable entre la clase 'sede' y 'personal'
+Relación uno a muchos, identificable entre la clase 'sede' y 'administrativos'.
+
+</td>
+</tr>
+<tr>
+    <td>Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la clase sede.
+Relación uno a muchos, identificable, entre la clase 'sede' y 'aprendiz'.
+Relación uno a muchos, identificable en la 'relación_instructores_SEDE'.
+Relación uno a muchos, identificable entre la clase 'sede' y 'control de acceso'
+Relación uno a muchos, identificable entre la clase 'sede' y 'personal'
+Relación uno a muchos, identificable entre la clase 'sede' y 'administrativos'.
+</td>
+</tr>
+<tr>
+    <td>Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la clase sede.
+Relación uno a muchos, identificable, entre la clase 'sede' y 'aprendiz'.
+Relación uno a muchos, identificable en la 'relación_instructores_SEDE'.
+Relación uno a muchos, identificable entre la clase 'sede' y 'control de acceso'
+Relación uno a muchos, identificable entre la clase 'sede' y 'personal'
+Relación uno a muchos, identificable entre la clase 'sede' y 'administrativos'.
+</td>
+</tr>
+<tr>
+    <td>Administrativos_ID_Administrativos</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la clase sede.
+Relación uno a muchos, identificable, entre la clase 'sede' y 'aprendiz'.
+Relación uno a muchos, identificable en la 'relación_instructores_SEDE'.
+Relación uno a muchos, identificable entre la clase 'sede' y 'control de acceso'
+Relación uno a muchos, identificable entre la clase 'sede' y 'personal'
+Relación uno a muchos, identificable entre la clase 'sede' y 'administrativos'.
+</td>
+</tr>
+<tr>
+    <td>Administrativos_Control_Acceso_COD_Registro</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la clase sede.
+Relación uno a muchos, identificable, entre la clase 'sede' y 'aprendiz'.
+Relación uno a muchos, identificable en la 'relación_instructores_SEDE'.
+Relación uno a muchos, identificable entre la clase 'sede' y 'control de acceso'
+Relación uno a muchos, identificable entre la clase 'sede' y 'personal'
+Relación uno a muchos, identificable entre la clase 'sede' y 'administrativos'.
+</td>
+</tr>
+<tr>
+    <td>Administrativos_Control_Acceso_Aprendiz_ID_Aprendiz</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Llave foránea de la clase sede.
+Relación uno a muchos, identificable, entre la clase 'sede' y 'aprendiz'.
+Relación uno a muchos, identificable en la 'relación_instructores_SEDE'.
+Relación uno a muchos, identificable entre la clase 'sede' y 'control de acceso'
+Relación uno a muchos, identificable entre la clase 'sede' y 'personal'
+Relación uno a muchos, identificable entre la clase 'sede' y 'administrativos'.
+</td>
+</tr>
+</table>
+</body>
+</html>

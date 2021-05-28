@@ -1,0 +1,111 @@
+body{
+margin: 0;
+padding: 0;
+ background-image: url(fondo.jpg);
+ background-size: 100%;
+ background-attachment: fixed;
+ color: white;
+}
+nav{
+    padding: 50px;
+}
+nav ul{
+    list-style: none;
+background:transparent;
+display: flex;
+
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 20px;
+border-radius: 500px;
+border: 0.5mm;
+font-size: 1.5em;
+}
+nav li a:hover{
+    background: white;
+    color:black;
+    transition: 0.5s;
+    
+}
+ .seccion h1{
+    
+    font-size: xx-large;
+    text-align: center;
+    font-family: monospace;
+    margin-top: 100px;
+ }     
+ .seccion p{
+     margin-top:90px;
+margin-left: 300px;
+margin-right: 430px;
+line-height:10mm;
+font-size: 130%;
+
+ }
+ #lista{
+     margin-top:70px;
+margin-left: 310px;
+line-height:10mm;
+font-size: 130%;
+
+ }
+
+ #mitad img{
+     margin-top: 1.5cm;
+    margin-left: 350px;
+    width: 500px;
+}
+
+#mitad h3{
+margin-left: 350px;
+text-align: left;
+margin-top: 50px;
+font-size: xx-large;
+}
+
+.seccion2{
+width: 500px;
+height: 285px;
+background-color: transparent;
+border-color: white;
+border: 1mm solid;
+padding: 15px;
+margin-left: 960px;
+margin-top: -328px;
+}
+.seccion2 p{
+font-size:130%;
+line-height: 10mm;
+text-align: center;
+margin-top: 5px;
+}
+#video{
+margin-left: 350px;
+margin-top:150px;
+width: 700px;
+height: 400px;
+}
+footer{
+width: 95%;
+height: 200px;
+background-color:transparent;
+border: 1mm solid;
+border-color: rgb(214, 54, 128);
+margin: auto;
+border-radius: 700px;
+margin-top: 150px;
+margin-bottom: 2em;
+}
+
+svg{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+footer pre{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 80px;
+}
